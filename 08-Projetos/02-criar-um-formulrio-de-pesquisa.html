@@ -1,0 +1,149 @@
+** start of undefined **
+
+<link rel="stylesheet" href="styles.css">
+
+<header>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Esse formulário visa levantar algumas informações sobre o perfil de nossos usuários.</p>
+</header>
+
+<form id="survey-form">
+    <label for="name" id="name-label">Nome:</label>
+    <input id="name" type="text" required placeholder="Seu nome">
+    <label for="email" id="email-label">E-mail:</label>
+    <input id="email" type="email" required placeholder="Seu email">
+    <label for="number" id="number-label">Idade:</label>
+    <input id="number" type="number" min="18" max="65" placeholder="Sua idade">
+
+    
+    <label for="dropdown">Tem filhos?</label>
+    <select id="dropdown">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+
+    <div id="ocupacao">
+        <label>Ocupação Atual:</label>
+        <label for="estudante">
+            <input id="estudante" value="estudante" type="radio" name="ocupacao" checked>
+            Estudante
+        </label>
+        <label for="empregado">
+            <input id="empregado" value="empregado" type="radio" name="ocupacao">
+            Empregado
+        </label>
+        <label for="autonomo">
+            <input id="autonomo" value="autonomo" type="radio" name="ocupacao">
+            Autonomo
+        </label>
+        <label for="desempregado">
+            <input id="desempregado" value="desempregado" type="radio" name="ocupacao">
+            Desempregado
+        </label>
+    </div>
+
+    <div id="escolaridade">
+        <label>Escolaridade:</label>
+        <label for="fundamental">
+            <input id="fundamental" value="fundamental" type="checkbox" name="escolaridade">
+            Ens. Fundamental
+        </label>
+        <label for="medio">
+            <input id="medio" value="medio" type="checkbox" name="escolaridade">
+            Ens. Médio
+        </label>
+        <label for="tecnico">
+            <input id="tecnico" value="tecnico" type="checkbox" name="escolaridade">
+            Técnico
+        </label>
+        <label for="superior">
+            <input id="superior" value="superior" type="checkbox" name="escolaridade">
+            Bacharel/Licenciado
+        </label>
+    </div>
+
+    <label for="comentarios">Comentários:</label>
+    <textarea id="comentarios" form="survey-form">Insira aqui suas observações.</textarea>
+    <button type="submit" id="submit">Salvar</button>
+</form>
+
+** end of undefined **
+
+** start of undefined **
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 3% 0 3%;
+  padding: 2%;
+  background-color: #000;
+  color: #fff;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stratch;
+  justify-content: space-evenly;
+  margin: 0 3% 3% 3%;
+  padding: 3%;
+  border: solid #000;
+  background-color: #B0C4DE;
+}
+
+#name {
+  margin-bottom: 2%;
+}
+
+#email {
+  margin-bottom: 2%;
+}
+
+#number {
+  margin-bottom: 2%;
+}
+
+#dropdown {
+  margin-bottom: 2%;
+}
+
+#ocupacao {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+#escolaridade {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+#comentarios {
+  margin-bottom: 2%;
+}
+
+#submit {
+  font-size: 24px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 15px;
+  border: none;
+}
+
+#submit:hover {
+  border: solid #fff;
+  transform: scale(1.005);
+}
+
+** end of undefined **
+

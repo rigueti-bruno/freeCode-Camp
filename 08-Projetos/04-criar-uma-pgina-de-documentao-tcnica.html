@@ -1,0 +1,142 @@
+** start of undefined **
+
+<link rel="stylesheet" href="styles.css"> 
+
+<nav id="navbar">
+    <header>Áreas ligadas a Dados</header>
+    <a href="#Ciencia_de_Dados" class="nav-link">Ciencia de Dados</a>
+    <a href="#Engenharia_de_Dados" class="nav-link">Engenharia de Dados</a>
+    <a href="#Analise_de_Dados" class="nav-link">Analise de Dados</a>
+    <a href="#Analise_de_Negocios" class="nav-link">Analise de Negocios</a>
+    <a href="#Inteligencia_de_Negocio" class="nav-link">Inteligencia de Negocio</a>
+</nav>
+
+<main id="main-doc">
+    <section class="main-section" id="Ciencia_de_Dados">
+        <header>Ciencia de Dados</header>
+        <p>Data Science ou Ciência de Dados é um estudo muito disciplinado com relação aos dados e demais informações inerentes à empresa e as visões que cercam um determinado assunto.</p>
+        <p>Em resumo é uma ciência que visa estudar as informações, seu processo de captura, transformação, geração e, posteriormente, análise de dados. A ciência de dados envolve diversas disciplinas.</p>
+        <code>Disciplinas Relacionadas:</code>
+        <ul>
+            <li>Estatística</li>
+            <li>Computação</li>
+            <li>Conhecimento do negócio</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Engenharia_de_Dados">
+        <header>Engenharia de Dados</header>
+        <p>Engenharia de dados é uma área que trata da transformação dos dados brutos de uma empresa.</p>
+        <p>Tudo começa a partir de processos de coleta, armazenamento e distribuição dos dados, que estão sob o guarda-chuva da engenharia de dados.</p>
+        <code>Disciplinas Relacionadas</code>
+        <ul>
+            <li>Big Data</li>
+            <li>Computação</li>
+            <li>Bancos de Dados</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Analise_de_Dados">
+        <header>Analise de Dados</header>
+        <p>A análise de dados é um trabalho de entendimento de um alto nível de dados desestruturados e que precisam ser compilados e destrinchados.</p>
+        <p>Em meio às práticas que marcam esse contexto, a análise de dados é uma das principais e mais importantes — não só para monitorar um negócio, mas para basear a tomada de decisões de forma estratégica.</p>
+        <code>Disciplinas Relacionadas</code>
+        <ul>
+            <li>Vendas</li>
+            <li>Marketing</li>
+            <li>Relacionamentos</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Analise_de_Negocios">
+        <header>Analise de Negocios</header>
+        <p>Análise de negócios pode ser definida como a prática de facilitação da mudança no contexto organizacional, através da identificação de necessidades e recomendação de soluções para entregar valor às partes interessadas.</p>
+        <p>Entende-se por identificação de necessidades o conjunto de atividades que promovem o entendimento das pessoas e suas necessidades.</p>
+        <code>Disciplinas Relacionadas</code>
+        <ul>
+            <li>Finanças</li>
+            <li>Estratégia</li>
+            <li>Soluções</li>
+        </ul>
+    </section>
+    <section class="main-section" id="Inteligencia_de_Negocio">
+        <header>Inteligencia de Negocio</header>
+        <p>Inteligência de negócios (BI) é um termo abrangente para a tecnologia que possibilita a preparação de dados, mineração de dados, gerenciamento de dados e visualização de dados.</p>
+        <p>As ferramentas e processos de inteligência de negócios permitem que usuários finais identifiquem informações acionáveis a partir de dados brutos, facilitando a tomada de decisão orientada por dados das organizações entre diversos de setores do mercado.</p>
+        <code>Disciplinas Relacionadas</code>
+        <ul>
+            <li>Computação</li>
+            <li>Estatística</li>
+            <li>Negócios</li>
+        </ul>
+    </section>
+</main>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    margin: 0;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 25% 50%;
+  }
+
+#navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #B5B5B5;
+  margin: 2% 0 2% 0;
+  padding: 2%;
+}
+
+#navbar header {
+  background-color: #000;
+  color: #fff;
+  padding: 3%;
+  text-align: center;
+}
+
+.nav-link {
+  margin: 2% 0 2% 0;
+  text-decoration: none;
+  color: #000;
+
+}
+
+.nav-link:hover {
+  border: solid 1px #fff;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 180;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0 2% 0;
+  padding: 4%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+  
+  @media (max-width: 650px) {
+    body {
+        margin: 5%;
+    }
+  }
+
+** end of undefined **
+

@@ -1,0 +1,108 @@
+** start of undefined **
+
+<link rel="stylesheet" href="styles.css">
+
+<header id="header">
+     <nav id="nav-bar">
+        <a href="#link1" class="nav-link">Analytics</a>
+        <a href="#link2" class="nav-link">Engineering</a>
+        <a href="#link3" class="nav-link">Science</a>
+    </nav>
+    
+    <img id="header-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fprofitvelocity.com%2Fwp-content%2Fuploads%2F2020%2F02%2FCrystal-Ball.png&f=1&nofb=1">
+   
+</header>
+
+<div class="dados">
+<article>
+    <section class="link" id="link1">Data Analytics: Traduz dados e números em uma linguagem em que a organização possa utilizar para tomar decisões.</section>
+    <section class="link" id="link2">Data Engineering: Matém as estruturas e torna os dados disponíveis para as operações e análises.</section>
+    <section class="link" id="link3">Data Science: Analisa os dados para gerar insights e modelos preditivos para serem aplicados nas operações dos negócios.</section>
+</article>
+
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KErUUZuyFsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input type="email" id="email" placeholder="Insira seu email" name="email">
+    <input type="submit" id="submit">
+</form>
+
+** end of undefined **
+
+** start of undefined **
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#header-img {
+  max-width: 50%;
+  heigth: auto;
+  grid-area: header;
+  margin: 2%;
+  border: solid #000;
+}
+
+#nav-bar {
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  justify-content: space-evenly;
+  margin: 0 0 2% 0;
+  padding: 0;
+  position: fixed;
+}
+
+#nav-bar a {  
+  margin: 2%;
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav-bar a:hover {
+  border: solid #fff;
+  padding: 1%;
+}
+
+.dados {
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 1%;
+  font-size: 24px;
+}
+
+.link {
+  margin: 0 0 2% 0;
+}
+
+#video {
+  margin: 1%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 300px) {
+  .dados {
+    flex-direction: column;
+    }
+  }
+
+** end of undefined **
+
